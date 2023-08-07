@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body
+{
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+.name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+    width: 100%;
+    height: 129px;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 450px;
+}
+.container
+{
+    position: relative;
+    background: url(./images/tasbeeh.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+.container h1
+{
+    position: absolute;
+    top: 45px;
+    right: 52px;
+
+}
+.container #buttonClick
+{
+    position: absolute;
+    top: 117px;
+    right: 71.3px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 21.6px 14.6px;
+    color: black;
+}
+.container #buttonReset
+{
+    position: absolute;
+    top: 107.5px;
+    right: 46.1px;
+    background: none;
+    border:none;
+    border-radius: 50%;
+    padding: 4.1px 7.5px;
+    color: black;
+}
+h3
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin-top: -135px;
+    letter-spacing: 3px;
+    color: gold;
+
+    display: none;
+}
+details
+{
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+strong
+{
+    color: rgb(255, 37, 37);
+}
+.main-v
+{
+    padding: '';
+    width: auto;
+    height: auto;
+    display: grid;
+    gap: 6px;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+.main-v .con
+{
+    display: block;
+}
+.con p
+{
+    color: rgb(255, 230, 0);
+    margin-left: 5px;
+    padding: 20px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.con video
+{
+    width: 350px;
+    aspect-ratio: 9/16 ;
+}
+@media only screen and (max-width: 600px) {
+
+    .main-v
+    {
+        display: grid;
+        gap: 30px;
+        grid-auto-flow: column;
+        grid-auto-columns: 105%;
+
+        overflow: auto;
+        overscroll-behavior-inline: contain;
+    }
+    .main-v::-webkit-scrollbar
+    {
+        height: 8px;
+        background-color: transparent;
+    }
+    .main-v::-webkit-scrollbar-thumb
+    {
+        background-color:#ffa600;
+        height: 8px;
+        border-radius: 20px;
+    }
+    
+}
